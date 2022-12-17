@@ -169,39 +169,41 @@
 
 // console.log(wordFrequency('hey bro yo yo yo'));
 
-const doubleMap = (numbers) => {
-    return numbers.map(number => number * 2)
-}
+// const doubleMap = (numbers) => {
+//     return numbers.map(number => number * 2)
+// }
 
 // console.log(doubleMap([1, 3, 5, 2, 6, 4]));
 
 
-const filter = (numbers, greaterThan) => {
-    let result = []
-    for (const number of numbers) {
-        if (number > greaterThan) {
-            result.push(number)
-        }
-    }
-    return result
-}
+// const filter = (numbers, greaterThan) => {
+//     let result = []
+//     for (const number of numbers) {
+//         if (number > greaterThan) {
+//             result.push(number)
+//         }
+//     }
+//     return result
+// }
 
 
 // console.log(filter([1, 2, 3, 4, 5, 6], 4));
 
 
-const brothers = [
-    {name: 'Rashed', netWorth: 100000},
-    {name: 'Rasel', netWorth: 450000},
-    {name: 'Abdullah', netWorth: 3000},
-    {name: 'Omar', netWorth: 110000},
-    {name: 'Abdul Aziz', netWorth: 650000},
-    {name: 'Abdur Rahman', netWorth: 33005}
-]
+// const brothers = [
+//     {name: 'Rashed', netWorth: 100000},
+//     {name: 'Rasel', netWorth: 450000},
+//     {name: 'Abdullah', netWorth: 3000},
+//     {name: 'Omar', netWorth: 110000},
+//     {name: 'Abdul Aziz', netWorth: 650000},
+//     {name: 'Abdur Rahman', netWorth: 33005}
+// ]
 
 
-const result = brothers.reduce((prev, curr) => prev + curr.netWorth, 0)
-console.log(result);
+// const result = brothers.reduce((prev, curr) => prev + curr.netWorth, 0)
+// console.log(result);
+
+
 
 // let result = brothers.filter(brother => brother.netWorth > 3000)
 // let checkJson = `${JSON.stringify(result)}`
@@ -218,3 +220,32 @@ console.log(result);
 // const result2 = nums.reduce((a, b) => a + b, -5)
 
 // console.log(result);
+
+
+
+// const randomFruit = (fruits) => {
+//     const randomNumber = Math.floor(Math.random() * fruits.length)
+//     return fruits[randomNumber]
+// }
+
+// let fruitsArr = ["Orange", "banana", "apple", "jackpot", "watermelon","pineapple"]
+// console.log(randomFruit(fruitsArr));
+
+
+
+const weatherScorer = (weather, weather2) => {
+    let score
+    if (weather === 'rainy' && weather2 === 'overcast' ) {
+        score = 2
+    }else if (weather === 'rainy') {
+        score = 1
+    } else if (weather === 'sunny') {
+        score = -1
+    }
+    else {
+        score = 0
+    }
+    return score
+}
+
+console.log(weatherScorer('rainy', 'sunny'));

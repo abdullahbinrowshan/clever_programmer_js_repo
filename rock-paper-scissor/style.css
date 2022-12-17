@@ -1,0 +1,33 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    padding:0;
+    margin: 0;
+    background: black;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.gameSec{
+    display: flex;
+}
+.gameSec .btnS>button{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin: 8px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.resetSec>.btnS>button{
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin: 8px;
+    font-size: 30px;
+    cursor: pointer;
+}

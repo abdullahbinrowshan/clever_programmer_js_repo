@@ -13,25 +13,25 @@
     <main>
         <section class="gameSec">
             <div class="btnS">
-                <button class="rockBtn" type="button" onclick="humanFunction(0)">✊</button>
+                <button class="rockBtn" type="button" onclick="humanFunction(0)" title="Rock">✊</button>
             </div>
             <div class="btnS">
-                <button class="paperBtn" type="button" onclick="humanFunction(1)">🤚</button>
+                <button class="paperBtn" type="button" onclick="humanFunction(1)" title="Paper">🤚</button>
             </div>
             <div class="btnS">
-                <button class="scissorBtn" type="button" onclick="humanFunction(2)">✌️</button>
+                <button class="scissorBtn" type="button" onclick="humanFunction(2)" title="Scissor">✌️</button>
             </div>
         </section>
         <section class="resultSec">
             <div>
-                <p id="scores">10</p>
-                <p id="WvsW">20</p>
-                <p id="winner">30</p>
+                <p id="scores"></p>
+                <p id="WvsW"></p>
+                <p id="winner"></p>
             </div>
         </section>
         <section class="resetSec">
             <div class="btnS">
-                <button class="resetBtn" type="reset" onclick="">🔴</button>
+                <button class="resetBtn" type="reset" onclick="resetGame()" title="Reset">🔴</button>
             </div>
         </section>
     </main>

@@ -144,7 +144,7 @@
 
 // const letterFrequency = (phrase) => {
 //     const frequency = {
-        
+
 //     }
 
 //     for (const letter of phrase) {
@@ -233,19 +233,29 @@
 
 
 
-const weatherScorer = (weather, weather2) => {
-    let score
-    if (weather === 'rainy' && weather2 === 'overcast' ) {
-        score = 2
-    }else if (weather === 'rainy') {
-        score = 1
-    } else if (weather === 'sunny') {
-        score = -1
-    }
-    else {
-        score = 0
-    }
-    return score
-}
+// const weatherScorer = (weather, weather2) => {
+//     let score
+//     if (weather === 'rainy' && weather2 === 'overcast' ) {
+//         score = 2
+//     }else if (weather === 'rainy') {
+//         score = 1
+//     } else if (weather === 'sunny') {
+//         score = -1
+//     }
+//     else {
+//         score = 0
+//     }
+//     return score
+// }
 
-console.log(weatherScorer('rainy', 'sunny'));
+// console.log(weatherScorer('rainy', 'sunny'));
+
+
+// {it's not working like Python
+// const arr = ['hello', 'hola', 'Assalamualaikum']
+
+// console.log(arr[-1]);}
+
+const fixArr = (value) => {
+    
+}

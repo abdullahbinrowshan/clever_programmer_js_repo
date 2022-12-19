@@ -20,11 +20,12 @@ main {
 }
 
 .gameSec .btnS>button {
-    padding: 18px;
+    background: white;
+    padding: 10px;
     border: none;
-    border-radius: 8px;
+    border-radius: 15px;
     margin: 8px;
-    font-size: 50px;
+    font-size: 60px;
     cursor: pointer;
 }
 
@@ -37,10 +38,11 @@ main {
 }
 
 .resetSec>.btnS>button {
-    padding: 18px;
+    background: yellowgreen;
+    padding: 10px 10px 14px 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     margin: 8px;
-    font-size: 50px;
+    font-size: 60px;
     cursor: pointer;
 }

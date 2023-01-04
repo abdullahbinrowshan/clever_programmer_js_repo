@@ -29,7 +29,7 @@ const showHeroInfo = (character) => {
 
     const name = `<h2>${character.name}</h2>`;
     const img = `<img src="${character.image.url}" width="300px" height="100%"/>`
-    const powerStats = character.powerstats
+    const powerStats = character.powerstats;
 
     const stats = Object.keys(powerStats).map(stat => {
         return ` <p>${statToEmoji[stat]} ${uppercaseWords(stat)}: ${powerStats[stat]}`

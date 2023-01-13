@@ -2,7 +2,7 @@ console.log('hello world');
 const baseURL = `https://superheroapi.com/api.php/10223569763528853/`;
 const heroDiv = document.getElementById('hero_img');
 const newHeroButton = document.getElementById('get_new_hero');
-const searchHero = document.getElementById('search_btn');
+const searchHeroBtn = document.getElementById('search_btn');
 const searchInput = document.getElementById('search_input');
 const heroName = document.getElementById('hero_name');
 
@@ -14,6 +14,13 @@ const randomHero = (id) => {
             showHeroInfo(hero)
         })
 }
+
+searchInput.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        searchHeroBtn.click();
+    }
+});
 
 const statToEmoji = {
     intelligence: '🧠',
@@ -60,4 +67,4 @@ newHeroButton.onclick = () => {
     randomHero(randomNum)
 }
 
-searchHero.onclick = () => searchSuperHero(searchInput.value)
+searchHeroBtn.onclick = () => searchSuperHero(searchInput.value)
